@@ -1,5 +1,7 @@
 # Test out DrawTexturePro
 
+![drawtextureprodemo](https://user-images.githubusercontent.com/580778/193171951-d276d7b0-1dd9-415e-853c-4a504e804995.png)
+
 raylib's DrawTexturePro function is quite complex, and the parameters affect the result in seemingly strange ways. This tool allows you to play with the various parameter values, to see how it will affect the result.
 
 It includes an outline of where the source rectangle is in relation to the original texture, and also an outline in the target to show how the destination rectangle is used. It also allows you to play with the `origin` field, which is probably the least intuitive of the bunch!
