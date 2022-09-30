@@ -255,8 +255,9 @@ void main()
 			// draw the texture source
 			DrawRectangle(0, 0, GetScreenWidth, GetScreenHeight, Color(150, 150, 150, 255));
 			DrawText("Texture:", 0, 0, textheight, Colors.BLACK);
-			rlTranslatef((GetScreenHeight - previewtop - texture.height) / 2,
-						(GetScreenWidth - previewleft - texture.width) / 2, 0);
+			rlTranslatef((GetScreenWidth - previewleft - texture.width) / 2,
+                                     (GetScreenHeight - previewtop - texture.height) / 2,
+                                     0);
 			DrawTexture(texture, 0, 0, Colors.WHITE);
 			// draw the source rectangle
 			auto previewsource = source;
