@@ -6,9 +6,10 @@
 	"dependencies": {
 		"raylib-d": "~>4.2.0"
 	},
-        "lflags-posix": ["-L."],
+    "libs": [ "raylib" ],
+	"lflags-posix" : ["-L."],
 	"lflags-osx" : ["-rpath", "@executable_path/"],
-        "libs": ["raylib"],
+	"lflags-linux" : ["-rpath=$$ORIGIN"],
 	"description": "A tool to see how the different parameters to raylib's DrawTexturePro function affect the result",
 	"license": "boost-1.0",
 	"name": "dtptool"
